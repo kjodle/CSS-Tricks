@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Tricks</title>
+
+	<meta name="author" content="Kenneth John Odle">
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" media="screen" href="css/styles.css?v=1.0">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css?v=1.0">
+	<!--
+	<link rel="stylesheet" media="print" href="css/print.css?v=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>CSS Tricks</h1>
+<p>These are just tricks and techniques I've used in various places. I believe that most of them are CSS3 compliant.</p>
+
+<h2>Spoiler</h2>
+<p>Here is a way to hide text from visitors until they hover over it.</p>
+<p>Here is the CSS:</p>
+<code><pre>
+.spoiler {
+	color: #fff;
+	border: dotted 1px #f00;
+	}
+.spoiler:hover {
+	color: #000;
+	border: dotted 1px #bbb;
+	}
+</pre></code>
+
+<p>And here's how it works in real life:</p>
+<p>Who did it? <span class="spoiler">The butler did it.</span></p>
+
+</div><!-- end "container" -->
+</body>
+
+</html>

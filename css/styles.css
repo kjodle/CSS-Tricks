@@ -1,0 +1,25 @@
+/* Page Styles */
+
+#container {
+	width: 80%;
+	max-width: 800px;
+	min-width: 600px;
+	margin: 0 auto;
+	padding: 1em;
+	box-shadow: 0 0 10px #bbb;
+	}
+
+/* Tricks and Techniques */
+/*************************/
+
+/* Spoiler */
+
+.spoiler {
+	color: #fff;
+	border: dotted 1px #f00;
+	}
+.spoiler:hover {
+	color: #000;
+	border: dotted 1px #bbb;
+	}
+
