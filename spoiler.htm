@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Tricks</title>
+
+	<meta name="author" content="Kenneth John Odle">
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" media="screen" href="css/styles.css">
+	<link rel="stylesheet" media="screen" href="css/spoiler.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+	<!--
+	<link rel="stylesheet" media="print" href="css/print.css?v=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>Spoiler</h1>
+<p>Here is a way to hide text from visitors until they hover over it.</p>
+
+<h2>Here is the CSS:</h2>
+
+<pre><code>
+.spoiler {
+	color: #fff;
+	border: dotted 1px #f00;
+	}
+.spoiler:hover {
+	color: #000;
+	border: dotted 1px #bbb;
+	}
+</code></pre>
+
+<h2>And here is the HTML:</h2>
+
+<pre><code>
+&lt;p&gt;Who did it? &lt;span class="spoiler"&gt;The butler did it.&lt;/span&gt;&lt;/p&gt;
+</code></pre>
+
+<h2>Example</h2>
+
+<p>And here's how it works in real life:</p>
+<p>Who did it? <span class="spoiler">The butler did it.</span></p>
+
+<p><a href="index.htm">Back to Index</a></p>
+
+</div><!-- end "container" -->
+</body>
+
+</html>

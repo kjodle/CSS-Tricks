@@ -1,0 +1,10 @@
+/* Spoiler */
+
+.spoiler {
+	color: #fff;
+	border: dotted 1px #f00;
+	}
+.spoiler:hover {
+	color: #000;
+	border: dotted 1px #bbb;
+	}
