@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Tricks</title>
+
+	<meta name="author" content="Kenneth John Odle">
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" media="screen" href="css/styles.css">
+	<link rel="stylesheet" media="print" href="css/printurl.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+	<!--
+	<link rel="stylesheet" media="print" href="css/print.css?v=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div class="noprint">
+
+<h1>Print URL</h1>
+<p>Here is a way to show URLs after links when printing. This is handy when saving pages as a pdf.</p>
+
+<h2>Here is the CSS:</h2>
+
+<pre><code>
+/* Add URL after link when printing */
+
+a:after {
+	content:"[URL: " attr(href) "] ";
+	text-decoration: none;
+	border: none;
+}
+
+
+/* Add image source information after image when printing */
+
+a[href$=jpg],
+a[href$=jpeg],
+a[href$=jpe],
+a[href$=png],
+a[href$=gif] {
+	white-space: pre;
+}
+
+a[href$=jpg]:after,
+a[href$=jpeg]:after,
+a[href$=jpe]:after,
+a[href$=png]:after,
+a[href$=gif]:after {
+	content:" \A [Image location: " attr(href) "] ";
+	text-decoration: none;
+}
+</code></pre>
+
+<h2>And here is the HTML:</h2>
+
+<pre><code>
+&lt;p&gt;This is a normal link to &lt;a href="https://pixabay.com/en/boy-dog-ocean-play-childhood-2354068/"&gt;a picture on Pixabay&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is a thumbnail that links to a larger image:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="images/boy-2354068_640.jpg"&gt;&lt;img src="images/boy-2354068_150.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+
+<h2>Example</h2>
+
+<p>You'll need to print preview to see this in action.</p>
+
+</div><!-- end "noprint" -->
+
+<p>This is a normal link to <a href="https://pixabay.com/en/boy-dog-ocean-play-childhood-2354068/">a picture on Pixabay</a>.</p>
+
+<p>This is a thumbnail that links to a larger image:</p>
+
+<p><a href="images/boy-2354068_640.jpg"><img src="images/boy-2354068_150.jpg" /></a></p>
+
+<p class="noprint"><a href="index.htm">Back to Index</a></p>
+
+</div><!-- end "container" -->
+</body>
+
+</html>
